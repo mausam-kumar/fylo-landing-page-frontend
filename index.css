@@ -1,0 +1,120 @@
+/* ! Primary Colors */
+
+:root{
+  /* - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%) */
+  --introBlue:hsl(217, 28%, 15%);
+    /* --Dark-Blue (main background): hsl(218, 28%, 13%) */
+  --mainBackground:hsl(217, 27%, 19%); 
+    /* - Dark Blue (footer background): hsl(216, 53%, 9%) */
+  --footerBackground:hsl(216, 53%, 9%);
+    /* - Dark Blue (testimonials background): hsl(219, 30%, 18%) */
+  --testimonials:hsl(219, 30%, 18%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+body{
+    background-color: var(--mainBackground);
+    width: 100vw;
+}
+.headerDiv{
+    /* border: 1px solid white; */
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.headerDiv > div:nth-child(1){
+    /* border: 1px solid orange; */
+    width: 50vw;
+}
+.headerDiv div img{
+    margin-top: 4.4vh;
+    margin-left: 3.2vw;
+    height: 56px;
+    width: 180;
+}
+.headerDiv > div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 50vw;
+    display: flex;
+    margin-left: 4vw;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.headerDiv span{
+    margin-left: 8vw;
+    color: white;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 400px;
+    
+}
+.sectionOneDiv{
+    /* background-image: url("images/illustration-intro.png"); */
+    /* border: 1px solid white; */
+    /* background-color: white; */
+}
+.sectionOneDivFirst{
+    margin: 0px auto;
+    width: 100vw;
+    height: 83vh;
+    /* border: 1px solid rgb(55, 196, 214); */
+    position: relative;
+}
+.sectionOneDiv div.sectionOneDivFirst img:nth-child(1){
+   
+    width: 100vw;
+    height: 62vh;
+    z-index: -1;
+    margin-top: 21vh;
+    /* border: 1px solid greenyellow;  */
+}
+.sectionOneDiv div.sectionOneDivFirst img:nth-child(2){
+    width: 35vw;
+    height: 53vh;
+    margin-left: 34vw;
+    text-align: center;
+    position: relative;
+    top: -85vh;
+    /* border: 1px solid red; */
+}
+.sectionOneDivSecond{
+    /* border: 1px solid orchid; */
+    width: 40vw;
+    position: relative;
+    height: 31vh;
+    top: -30vh;
+    left: 31vw;
+    color: white;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 400px;
+    text-align: center;
+}
+.sectionOneDivSecond p:nth-child(1){
+    margin-top: 1vw;
+    /* text-align: center; */
+    font-size: 25px;
+}
+.sectionOneDivSecond p:nth-child(2){
+    margin-top: 1vw;
+    /* text-align: center; */
+
+}
+.sectionOneDivSecond button{
+    width: 16vw;
+    height: 7vh;
+    border-radius: 32px;
+    background-color: hsl(198, 60%, 50%);
+    border: none;
+    margin-top: 1.5vw;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
