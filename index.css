@@ -2,14 +2,16 @@
 
 :root{
   /* - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%) */
-  --introBlue:hsl(217, 28%, 15%);
+  --introBlue:hsl(217, 45%, 67%);
     /* --Dark-Blue (main background): hsl(218, 28%, 13%) */
   --mainBackground:hsl(217, 27%, 19%); 
     /* - Dark Blue (footer background): hsl(216, 53%, 9%) */
+  --DarkMainBackground:hsl(218, 28%, 13%);
   --footerBackground:hsl(216, 53%, 9%);
     /* - Dark Blue (testimonials background): hsl(219, 30%, 18%) */
   --testimonials:hsl(219, 30%, 18%);
 }
+
 
 *{
     margin: 0px;
@@ -52,7 +54,13 @@ body{
     font-size: 18px;
     font-family: Raleway;
     font-weight: 400px;
+    transition: .3s all ease-in-out;
     
+}
+.headerDiv span:hover{
+    color: var(--introBlue);
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .sectionOneDiv{
     /* background-image: url("images/illustration-intro.png"); */
@@ -81,10 +89,8 @@ body{
     text-align: center;
     position: relative;
     top: -85vh;
-    /* border: 1px solid red; */
 }
 .sectionOneDivSecond{
-    /* border: 1px solid orchid; */
     width: 40vw;
     position: relative;
     height: 31vh;
@@ -98,12 +104,10 @@ body{
 }
 .sectionOneDivSecond p:nth-child(1){
     margin-top: 1vw;
-    /* text-align: center; */
     font-size: 25px;
 }
 .sectionOneDivSecond p:nth-child(2){
     margin-top: 1vw;
-    /* text-align: center; */
 
 }
 .sectionOneDivSecond button{
@@ -114,7 +118,143 @@ body{
     border: none;
     margin-top: 1.5vw;
     color: white;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
     font-family: 'Open Sans', sans-serif;
+    transition: .3s all ease-in-out;
+}
+.sectionOneDivSecond button:hover{
+    border: 1px solid var(--introBlue);
+    background-color: inherit;
+    transform: scale(1.05);
+}
+.sectionSecond{
+    margin: -33.2vh auto;
+    width: 100vw;
+    background-color: var(--DarkMainBackground);
+    height: 91vh;
+    text-align: center;
+}
+.sectionSecond table{
+    margin: 0px auto;
+    width: 66vw;
+    height: 91vh;
+}
+.sectionSecond table tr td{
+    padding: 4vw;
+    text-align: center;
+    color: white;
+}
+
+.sectionSecondContainer p:nth-child(2){
+    margin-top: 1.5vh;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Raleway;
+}
+.sectionSecondContainer p:nth-child(3){
+    margin-top: 1.5vh;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Raleway;
+}
+
+.sectionThird{
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--DarkMainBackground);
+    margin: 33vh auto;
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    font-family: Raleway;
+
+}
+.sectionThird div:nth-child(1){
+    /* margin: 0px auto; */
+    padding: 2% 0px 5% 5%;
+    width: 50vw;
+    height: inherit;
+    /* border: 1px solid pink; */
+}
+.sectionThird div:nth-child(1) img{
+    float: right;
+    height: 55vh;
+    width: 34vw;
+}
+.sectionThird div:nth-child(2){
+    width: 45vw;
+    font-size: 18px;
+    padding: 4%;
+    /* border: 1px solid rgb(104, 9, 25); */
+}
+.sectionThirdSecond > p:nth-child(1){
+    margin-top: 10vh;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+.sectionThirdSecond > p:nth-child(2){
+    margin-top: 3vh;
+}
+.sectionThirdSecond > p:nth-child(3){
+    margin-top: 3vh;
+    
+}
+.sectionThirdSecond > div{
+    display: flex;
+    color: hsl(198, 60%, 50%);
+    margin-top: 4vh;
+    width: 12vw;
+    padding-bottom: 1vh;
+    /* border: 1px solid white; */
+    border-bottom: 3px solid hsl(198, 60%, 50%);
+    font-size: 18px;
+}
+.sectionThirdSecond > div img{
+    margin-left: 1vw;
+}
+.sectionForth{
+    background-color: var(--DarkMainBackground);
+    margin:-33.2vh auto;
+    width: 100vw;
+    height: 64vh;
+    /* border: 1px solid white; */
+}
+.sectionForth tr{
+    display: flex;
+    justify-content: space-around;
+}
+.sectionForth tr td{
+    width: 24vw;
+    background-color: var(--mainBackground);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3% 5% 3% 3%;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 6.7vw;
+    /* border: 1px solid white; */
+}
+.sectionForth tr td div{
+
+    margin-top: 2vh;
+    display: flex;
+}
+.sectionForth tr td div div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5vw;
+    margin-top: -.1vh;
+}
+.sectionForth tr td div div p:nth-child(1){
+    font-size: 18px;
+    font-weight: 700;
+}
+.sectionForth tr td div img{
+    border-radius: 50px;
+    width: 3.3vw;
+    height: 7vh;
+    
 }
