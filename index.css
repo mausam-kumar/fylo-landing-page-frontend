@@ -299,7 +299,10 @@ body{
     border: none;
     margin-top: 2vh;
     outline: none;
-    padding: 2px;
+    padding: 5px;
+    color: var(--DarkMainBackground);
+    font-size: 25px;
+    caret-color:var(--footerBackground);
 }
 .sectionFifth div button:nth-child(2){
     border-radius: 30px;
@@ -307,13 +310,13 @@ body{
     width: 21.2vw;
     color: white;
     font-family: Raleway;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
     border: none;
     text-align: center;
     margin-left: 1.5vw;
     margin-top: 2vh;
-    background-color: hsl(198, 67%, 68%);
+    background-color: hsl(198, 64%, 39%);
     transition: 0.3s all ease-in-out;
 }
 .sectionFifth div button:nth-child(2):hover{
@@ -336,13 +339,21 @@ body{
     display: flex;
     justify-content: space-around;
 }
-section.sectionSixth div.social-image img{
+section.sectionSixth div.social-image a{
     height: 4vh;
     width: 2vw;
-    /* background-color: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
-    fill: white;
+    color: white;   /* for changing the color of font awesome icon */
     border: 1px solid white;
+    transition: .3s all ease-in-out;
+}
+section.sectionSixth div.social-image a:hover{
+    color: orangered;
+    transform: scale(1.1);
+    border: 1px solid orangered;
 }
 section.sectionSixth div.social-image {
     display: flex;
@@ -351,7 +362,7 @@ section.sectionSixth div.social-image {
 
 .sectionSixthFirst{
     text-align: center;
-    width: 20vw;
+    width: 18vw;
     margin-top: 26vh;
     padding: 2%;
     height: 30vh;
@@ -360,7 +371,7 @@ section.sectionSixth div.social-image {
 section.sectionSixth div.sectionSixthFirstDiv{
     text-align: left;
     width: 30vw;
-    padding: 2%;
+    padding: 2% 2% 2% 4%;
 }
 section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2){
     display: flex;
@@ -369,7 +380,7 @@ section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2){
 section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2) img{
     height: 4vh;
     width: 2vw;
-    background-color: inherit;
+    /* background-color: white; */
     border-radius: 50px;
     
 }
@@ -383,6 +394,7 @@ section.sectionSixth div.sectionSixthFirstAddress div{
 section.sectionSixth div.sectionSixthFirstAddress div p{
     margin-left: 1vw;
 }
+
 li{
     list-style: none;
     margin-top: 1.5vh;
@@ -394,3 +406,18 @@ li:hover{
     transform: scale(1.1);
 } 
 
+footer p{
+    font-family: Raleway;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: orangered;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+footer a:hover{
+    transform: scale(1.3);
+}
