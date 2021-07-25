@@ -22,6 +22,7 @@
 body{
     background-color: var(--mainBackground);
     width: 100vw;
+    overflow-x: hidden;
 }
 .headerDiv{
     /* border: 1px solid white; */
@@ -98,7 +99,7 @@ body{
     left: 31vw;
     color: white;
     font-size: 16px;
-    font-family: Raleway;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
     text-align: center;
 }
@@ -155,13 +156,13 @@ body{
 }
 .sectionSecondContainer p:nth-child(3){
     margin-top: 1.5vh;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    font-family: Raleway;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .sectionThird{
-    width: 100vw;
+    /* width: 99vw; */
     height: 70vh;
     background-color: var(--DarkMainBackground);
     margin: 33vh auto;
@@ -174,7 +175,7 @@ body{
 .sectionThird div:nth-child(1){
     /* margin: 0px auto; */
     padding: 2% 0px 5% 5%;
-    width: 50vw;
+    width: 45vw;
     height: inherit;
     /* border: 1px solid pink; */
 }
@@ -208,9 +209,11 @@ body{
     margin-top: 4vh;
     width: 12vw;
     padding-bottom: 1vh;
-    /* border: 1px solid white; */
     border-bottom: 3px solid hsl(198, 60%, 50%);
     font-size: 18px;
+}
+.sectionThirdSecond > div{
+    font-size: 16px;
 }
 .sectionThirdSecond > div img{
     margin-left: 1vw;
@@ -219,12 +222,12 @@ body{
     background-color: var(--DarkMainBackground);
     margin:-33.2vh auto;
     width: 100vw;
-    height: 64vh;
-    /* border: 1px solid white; */
+    height: 75vh;
+    /* border: 1px solid rgb(148, 18, 18); */
 }
 .sectionForth tr{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .sectionForth tr td{
     width: 24vw;
@@ -233,8 +236,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     padding: 3% 5% 3% 3%;
     font-size: 15px;
+    margin-top: 3vh;
     border-radius: 10px;
-    margin-left: 6.7vw;
+    margin-left: 6.5vw;
     /* border: 1px solid white; */
 }
 .sectionForth tr td div{
@@ -258,3 +262,135 @@ body{
     height: 7vh;
     
 }
+.sectionFifth{
+    margin: 2vh auto;
+    text-align: center;
+    /* border: 1px solid white; */
+    width: 61.8vw;
+    height: 35vh;
+    color: white;
+    padding: 3%;
+    background-color: var(--mainBackground);
+    border-radius: 10px;
+    position: relative;
+    top: 15vh;
+
+}
+.sectionFifth p:nth-child(1){
+    margin-top: 2vh;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+}
+.sectionFifth p:nth-child(2){
+    margin-top: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sectionFifth div{
+    display: flex;
+
+}
+.sectionFifth div input:nth-child(1){
+    border-radius: 30px;
+    height: 7.4vh;
+    width: 25.8vw;
+    border: none;
+    margin-top: 2vh;
+    outline: none;
+    padding: 2px;
+}
+.sectionFifth div button:nth-child(2){
+    border-radius: 30px;
+    height: 7.4vh;
+    width: 21.2vw;
+    color: white;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    background-color: hsl(198, 67%, 68%);
+    transition: 0.3s all ease-in-out;
+}
+.sectionFifth div button:nth-child(2):hover{
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    transform: scale(1.05);
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.sectionSixth{
+
+    margin: -6vh auto;
+    height:64.5vh;
+    background-color: var(--footerBackground);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+section.sectionSixth div.social-image img{
+    height: 4vh;
+    width: 2vw;
+    /* background-color: inherit; */
+    border-radius: 50px;
+    fill: white;
+    border: 1px solid white;
+}
+section.sectionSixth div.social-image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionSixthFirst{
+    text-align: center;
+    width: 20vw;
+    margin-top: 26vh;
+    padding: 2%;
+    height: 30vh;
+    /* border: 1px solid rgb(243, 240, 240); */
+}
+section.sectionSixth div.sectionSixthFirstDiv{
+    text-align: left;
+    width: 30vw;
+    padding: 2%;
+}
+section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2){
+    display: flex;
+    margin-top: 1vh;
+}
+section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2) img{
+    height: 4vh;
+    width: 2vw;
+    background-color: inherit;
+    border-radius: 50px;
+    
+}
+section.sectionSixth div.sectionSixthFirstDiv div:nth-child(2) p{
+    margin-left: 1vw;
+}
+section.sectionSixth div.sectionSixthFirstAddress div{
+    display: flex;
+    margin-top: 2vh;
+}
+section.sectionSixth div.sectionSixthFirstAddress div p{
+    margin-left: 1vw;
+}
+li{
+    list-style: none;
+    margin-top: 1.5vh;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}   
+li:hover{
+    color: rgb(130, 112, 247);
+    transform: scale(1.1);
+} 
+
